@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03d21647f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <h2>Daily Weather Forecast</h2>
+        
+        <form action="">
+          <input type="search" id="search" placeholder="Enter city name ">
+          <button id="searchbtn"><label for="search"><i class="fa-solid fa-magnifying-glass"></i></label></button>
+        </form>
+  
+        <img src="./images/clouds.webp" alt="weather" width="100px" height="auto" class="img-cloud">
+       
+      <div class="out">
+        
+      <div class="degree-celcus">
+          <h2 id="temp"></h2>
+          <div class="degree">
+            <h1  id="degree1"></h1>
+            <h1 id="degree2"></h1>
+            <div id="wind">
+              <p id="degree3"></p>
+              <p id="degree4"></p>
+            </div>
+          </div>
+      </div>
+        <!-- search location -->
+      <div class="location">
+        <p id="locate1"></p>
+        <p id="locate2"></p>
+        <p id="locate3"></p>
+      </div>
+    
+     
+    </div> 
+</body>
+<script src="./index.js"></script>
+</html>
