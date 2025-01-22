@@ -22,14 +22,10 @@ function init(){
     fetch(url, {mode:'cors'})
     .then(response =>response.json())
     .then(content => {
-      // console.log(content.forecast.forecastday[0]['astro'])
-      // console.log(content.forecast.forecastday[0].day.mintemp_c)
-      // console.log(content.location)
+      
       console.log(content)
-      // console.log(content['location'].lat)
-      //location
+      
       location1.textContent= content['location'].name
-      // location2.textContent= content['location'].region
       location3.textContent= content['location'].country
       locate = document.createElement('i')
       locate.classList.add('fa-solid')
@@ -58,7 +54,7 @@ function init(){
 
     })
     .catch(err=>{
-      // console.error(err)
+      
     })
   
 })
